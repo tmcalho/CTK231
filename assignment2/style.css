@@ -1,0 +1,58 @@
+/* --- General Page Styles --- */
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 40px;
+    line-height: 1.5;
+    color: black;
+    background-color: white;
+}
+
+/* --- Headings --- */
+h1, h2, h3 {
+    margin-bottom: 5px;
+    color: navy;               /* heading text color */
+    background-color: lightgray; /* heading background color */
+}
+
+/* --- Paragraphs --- */
+p {
+    margin-top: 5px;
+}
+
+/* --- Lists --- */
+ul {
+    margin-left: 40px;
+}
+
+/* --- Images --- */
+img {
+    max-width: 600px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* --- Links --- */
+a {
+    color: red;      /* default link color */
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellow;   /* hover color */
+}
+
+a:visited {
+    color: green;    /* visited color */
+}
+
+/* --- Div and Span Styling --- */
+.box {
+    border: 2px solid black;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.highlight {
+    color: purple;
+    font-weight: bold;
+}
