@@ -1,0 +1,14 @@
+h1 {
+color: rgb(66, 7, 105); 
+background-color: rgb(119, 111, 148);
+}
+  .turnred {
+    color: red ;
+  }
+
+#special{
+    background-color: yellow ;
+}
+a:hover {
+color: lavender
+}
