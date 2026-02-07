@@ -1,0 +1,45 @@
+/* Entire page font */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+
+    background-image: url("clouds.jpg"); /* make sure desk.jpg is same folder */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* All headings */
+h1, h2, h3, h4, h5, h6 {
+    color: orange;
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* Center paragraph */
+.center-text {
+    text-align: center;
+}
+
+/* Justify paragraph */
+.justify-text {
+    text-align: justify;
+}
+
+/* Link colors */
+a {
+    color: red;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:visited {
+    color: green;
+}
+
+/* Image styling (REQUIRED look) */
+img {
+    border: 10px solid black;
+    padding: 10px;
+    background-color: yellow;
+}
