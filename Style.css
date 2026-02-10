@@ -1,0 +1,91 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+}
+h1 {
+    color: white;
+    margin: 0;
+}
+
+/* header */
+header {
+    background-color: #959be0;
+    padding: 15px;
+}
+
+/* link */
+a {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* image */
+img {
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* colors */
+.red-text {
+    color: red;
+}
+
+.yellow-text {
+    color: goldenrod;
+}
+
+.blue-text {
+    color: blue;
+    font-weight: bold;
+}
+
+
+.yellow-highlight {
+    background-color: yellow;
+    padding: 10px;
+}
+
+.green-highlight {
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+/* footer */
+footer {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.fire {
+    background-color: yellow;
+}
+
+.full-width-green {
+  background-color: darkgreen;
+}
+
+.orange-text {
+  color: orange;
+  font-weight: bold;
+}
+
+.yellow-highlight {
+  background-color: yellow;
+  padding: 6px;       /* space around the text */
+  display: block;     /* full width highlight */
+}
+.red-text {
+  color: red;         /* heading stays red */
+}
+
+.blue-bold-heading {
+    color: blue;
+    font-weight: bold;
+}
