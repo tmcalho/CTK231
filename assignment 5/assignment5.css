@@ -1,26 +1,32 @@
+/* Background pattern */
 body {
     margin: 0;
     background-image: url("a5bg.png");
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Center page */
 .wrapper {
     width: 960px;
     margin: 20px auto;
     padding: 0 20px;
 }
 
+/* H1 */
 h1 {
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: normal;
     background-color: #e5e5e5;
     padding: 20px;
     margin-bottom: 20px;
 }
 
+/* Navigation */
 nav {
     margin-bottom: 20px;
 }
 
+/* Tabs */
 nav a {
     background-color: #00008B;
     color: white;
@@ -28,36 +34,45 @@ nav a {
     margin-right: 15px;
     display: inline-block;
     text-decoration: none;
+
+    /* REQUIRED FONT */
+    font-family: "Times New Roman", Times, serif;
 }
+
+/* Keep visited links white */
 nav a:link,
 nav a:visited {
     color: white;
 }
 
+/* Hover effect — TEXT turns red */
 nav a:hover {
-    background-color: #0000CD;
-    color: white;
-    text-decoration: none;
+    color: red;
+    background-color: #00008B;
 }
 
-
+/* White content box */
 .white-box {
     background-color: white;
     padding: 25px;
     margin-bottom: 20px;
 }
 
+/* H2 */
 h2 {
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
     border-bottom: 3px solid black;
     padding-bottom: 10px;
     margin-top: 0;
 }
 
+/* Paragraphs */
 p {
     text-align: justify;
 }
 
+/* Content links */
 .white-box a {
     color: blue;
     font-weight: bold;
@@ -69,6 +84,7 @@ p {
     text-decoration: underline;
 }
 
+/* Footer */
 footer {
     background-color: #00008B;
     color: white;
