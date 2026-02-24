@@ -1,0 +1,73 @@
+/* Background */
+body {
+    background-color: #ffffff;
+    font-family: "Times New Roman", Times, serif;
+    margin: 20px;
+}
+
+/* Main title */
+h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+
+/* Navigation box */
+nav {
+    width: 260px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+/* Navigation list */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Each tab */
+nav li {
+    border: 2px solid black;
+}
+
+/* Tab links */
+nav a {
+    display: block;
+    background-color: red;
+    color: white;
+    padding: 18px;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+}
+
+/* Hover effect */
+nav a:hover {
+    background-color: darkred;
+}
+
+/* Second header */
+h2 {
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 20px;
+}
+
+/* Image */
+img {
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Paragraphs */
+p {
+    font-family: "Times New Roman", Times, serif;
+    line-height: normal;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
+
+/* Footer text */
+footer {
+    margin-top: 20px;
+    border: none;
+}
