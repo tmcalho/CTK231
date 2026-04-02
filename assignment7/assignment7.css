@@ -1,0 +1,283 @@
+body{
+    background-color:grey;
+}
+
+/* Main centered container */
+#wrapper{
+    margin: 1em auto;
+    padding: 0;
+    width: 1200px; 
+    border: 5px solid blue;
+    background-color: #ffffff;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+header {
+    grid-column: span 12;
+    background-color: rgba(66, 130, 249);
+    padding: 5px; 
+}
+
+header a{ 
+    color: lightblue;
+    text-decoration: none;
+    font-weight: normal;
+    /* margin-left: 30px; */
+}
+
+nav  {
+    grid-column: span 12;
+    font-size: 20px ;
+}
+
+nav ul {
+    list-style: none; 
+    margin: 0;
+    display: flex; 
+}
+
+nav li {
+    display: block; 
+    background-color: blue;
+    border: 1px solid black;
+    margin-right: 5px;
+    padding: 1em; 
+    color: white;
+    text-decoration: none; 
+}
+
+nav a:hover {
+    color: red; 
+}
+
+aside { 
+    grid-column: span 4;
+    background-color: lightgrey;
+    padding: 1em;
+}
+
+aside h2 {
+    border-bottom: 3px solid black;
+}
+
+aside p {
+    font-size: 20px;
+    font-weight: bold; 
+}
+
+main { 
+    grid-column: span 8;
+    background-color: #eeeeee;
+    padding: 20px;
+}
+
+main h2 { 
+    border-bottom: 3px solid black;
+}
+
+main p { 
+    font-size: 20px; 
+
+}
+
+main a { 
+    color: blue; 
+    text-decoration: none; 
+}
+
+main a:hover {
+    color: red;
+}
+
+.mainimg {
+    float: left; 
+    margin-right: 10px
+}
+
+footer {
+    grid-column: span 12;
+    background-color: red;
+    padding: 5px;
+}
+
+.main2 { 
+    grid-column: span 8;
+    background-color: #eeeeee;
+    padding: 20px;
+}
+
+main2 h2 {
+    border-bottom: 3px solid black;
+}
+
+main2 p {
+    font-size: 20px;
+}
+
+main2 a:hover {
+    color: red;
+}
+
+.main2img { 
+    float: right;
+    margin-right: 10px;
+}
+
+.sidebar {
+    grid-column: span 4;
+    background-color: lightgrey;
+    padding: 1em;
+}
+
+.sidebar p {
+    font-size: 20px;
+    font-weight: bold; 
+}
+
+.robby {
+    grid-column: span 4; 
+    padding: 1em ;
+    font-size: 20px;
+}
+.robby a:hover {
+    color: red;
+}
+
+.dana {
+    grid-column: span 4;
+    padding: 1em ;
+    font-size: 20px;
+}
+
+.dana a:hover {
+    color: red;
+}
+
+.crash {
+    grid-column: span 4;
+    padding: 1em ;
+    font-size: 20px;
+}
+
+.crash a {
+    color: blue;
+    text-decoration: none;
+}
+
+.crash a:hover {
+    color: red;
+}
+
+/* First paragraph bold (Welcome section) */
+p:first-of-type{
+    font-weight: normal;
+}
+
+/* Links in content */
+a{
+    color:red;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+a:hover{
+    color:blue;
+    text-decoration:underline;
+}
+
+.left p{
+    font-weight: normal;
+}
+
+footer{
+background-color:#cc0000;
+padding:15px;
+border-top:5px solid #0a4ea3;
+font-family: Verdana, Arial, sans-serif;
+font-style: italic;
+text-align: center;
+}
+.redlink{
+color:red;
+font-weight:bold;
+}
+
+.sidebar{
+    background-color:#ffffff;
+    padding:20px;
+   
+}
+
+/* Left column */
+.aboutlayout .left{
+    background-color:rgba(255, 255, 255, 0.969);
+    padding:30px;
+}
+
+.right{
+    background-color:rgba(255, 255, 255, 0.969);
+    padding:20px;
+}
+
+
+.aboutlayout .right{
+    background-color: rgba(249, 251, 251, 0.969);
+    padding:25px;
+    font-weight:bold;
+}
+
+.aboutlayout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.aboutlayout .left {
+    grid-column: span 2;
+}
+
+.aboutlayout .right {
+    grid-column: span 1;
+}
+
+.wrapimg {
+    float: right;
+    width: 350px;
+    margin: 0 0 10px 20px;
+    border: 6px solid #1e4ea7;
+}
+
+.welcomelayout {
+    display:grid;
+    grid-template-columns:300px 1fr;
+}
+
+
+.aboutlayout .left {
+    overflow: auto;
+} 
+
+nav ul {
+    display: flex;
+}
+
+.gallerygrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
