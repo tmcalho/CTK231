@@ -5,9 +5,7 @@
 }
 
 body {
-  background: #a05a72;
-  font-family: Arial, sans-serif;
-  color: #2f2f2f;
+  font-family: 'Fredoka', sans-serif;
 }
 
 /* container */
@@ -105,3 +103,93 @@ body {
   border-width: 1px;
 }
 
+.card {
+  border-radius: 20px; /* rounded corners */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* drop shadow */
+  transition: transform 0.3s ease; /* smooth hover */
+}
+
+.card:hover {
+  transform: scale(1.05); /* hover effect */
+}
+
+button {
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #72805d;
+}
+
+body {
+  font-family: 'Fredoka', sans-serif;
+}
+
+.draft-card {
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.draft-card:hover {
+  transform: scale(1.05);
+}
+
+.icons i {
+  font-size: 28px;
+  margin: 10px;
+  color: #f4b3c2;
+}
+
+.icons {
+  text-align: center;
+  margin: 10px 0 20px;
+}
+
+body {
+  background: linear-gradient(135deg, #a8a8c4, #085221, #0f3460);
+  color: #f5e6cc;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.draft-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.draft-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #f5b7b1, 0 0 30px #c39bd3;
+}
+
+.nav-box {
+  display: block;
+  padding: 10px;
+  margin: 8px 0;
+  background: rgba(255,255,255,0.1);
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-box:hover {
+  background: #f5b7b1;
+  color: #1a1a2e;
+}
+
+.icons i {
+  font-size: 30px;
+  margin: 10px;
+  color: #f5b7b1;
+  text-shadow: 0 0 10px #c39bd3;
+}
+
+h1 {
+  text-shadow: 0 0 10px #f5b7b1, 0 0 20px #c39bd3;
+}
