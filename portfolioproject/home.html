@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tysondra | My Sanctuary</title>
@@ -9,6 +10,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
   <div class="container">
@@ -40,7 +42,9 @@
 
         <article class="draft-card">
           <h2>DRAFT I.</h2>
-          <img src="moonlight-dreams.jpg" alt="Draft one preview">
+          <a href="moonlight-dreams.jpg" data-fancybox="gallery">
+  <img src="moonlight-dreams.jpg" alt="Draft one preview">
+</a>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas...
           </p>
@@ -48,7 +52,9 @@
 
         <article class="draft-card">
           <h2>DRAFT II.</h2>
-          <img src="neon-heart.jpg" alt="Draft two preview">
+          <a href="neon-heart.jpg" data-fancybox="gallery">
+  <img src="neon-heart.jpg" alt="Draft two preview">
+</a>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas...
           </p>
@@ -56,7 +62,9 @@
 
         <article class="draft-card">
           <h2>DRAFT III.</h2>
-          <img src="sanctuary-stars.jpg" alt="Draft three preview">
+          <a href="sanctuary-stars.jpg" data-fancybox="gallery">
+  <img src="sanctuary-stars.jpg" alt="Draft three preview">
+</a>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas...
           </p>
@@ -68,7 +76,7 @@
   <h2>✦ my type of vibes. ✦</h2>
 
   <iframe width="100%" height="315"
-  src="https://youtube.com/embed/gNNZ165Zvn4?si=bM-tBR9SfAyPGsd1Y"
+  src="https://www.youtube.com/embed/gNNZ165Zvn4"
   allowfullscreen>
   </iframe>
 </section>
@@ -77,6 +85,20 @@
     </main>
 
   </div>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+<script>
+  Fancybox.bind("[data-fancybox='gallery']", {});
+</script>
+<style>
+.icons {
+  text-align: center;
+  margin: 10px 0;
+}
 
+.icons i {
+  margin: 0 8px;
+}
+</style>
 </body>
 </html>
+
