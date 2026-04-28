@@ -4,91 +4,70 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Tysondra | My Sanctuary</title>
+
   <link rel="stylesheet" href="sanctuary.css">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-  <div class="container">
+<div class="container">
 
-    <header class="banner col-12">
-      <h1>✶ WELCOME 2 MY WEBSITE. ✶</h1>
-    </header>
+  <!-- HEADER -->
+  <header class="banner col-12">
+    <h1>✶ WELCOME 2 MY WEBSITE. ✶</h1>
+  </header>
 
-<div class="icons">
-  <i class="fa-solid fa-heart"></i>
-  <i class="fa-solid fa-star"></i>
-  <i class="fa-solid fa-music"></i>
+  <!-- ICONS -->
+  <div class="icons">
+    <i class="fa-solid fa-heart"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-music"></i>
+  </div>
+
+  <main class="main-content">
+
+    <!-- HERO -->
+    <section class="hero col-8">
+      <img src="moonchild.jpg" alt="Main portrait">
+    </section>
+
+    <!-- NAVIGATION -->
+    <aside class="sidebar col-4">
+      <a href="aboutme.html" class="nav-box">ABOUT ME</a>
+      <a href="projects.html" class="nav-box">PROJECTS</a>
+      <a href="playlist.html" class="nav-box">PLAYLIST</a>
+      <a href="galleryy.html" class="nav-box">GALLERY</a>
+      <a href="contacts.html" class="nav-box">SEND ME LUV!</a>
+    </aside>
+
+
+
+    <!-- MEDIA -->
+    <section class="media col-12">
+      <h2>✦ my type of vibes. ✦</h2>
+
+      <iframe 
+        width="100%" 
+        height="315"
+        src="https://www.youtube.com/embed/gNNZ165Zvn4"
+        allowfullscreen>
+      </iframe>
+    </section>
+
+  </main>
+
 </div>
 
-    <main class="main-content">
-
-      <section class="hero col-8">
-        <img src="moonchild.jpg" alt="Main portrait">
-      </section>
-
-      <aside class="sidebar col-4">
-        <a href="#" class="nav-box">MY SANCTUARY</a>
-        <a href="#" class="nav-box">VISIONS</a>
-        <a href="#" class="nav-box">VIBES</a>
-        <a href="#" class="nav-box">SEND ME LUV!</a>
-      </aside>
-
-      <section class="drafts col-12">
-
-        <article class="draft-card">
-          <h2>DRAFT I.</h2>
-          <a href="moonlight-dreams.jpg" data-fancybox="gallery">
-  <img src="moonlight-dreams.jpg" alt="Draft one preview">
-</a>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas...
-          </p>
-        </article>
-
-        <article class="draft-card">
-          <h2>DRAFT II.</h2>
-          <a href="neon-heart.jpg" data-fancybox="gallery">
-  <img src="neon-heart.jpg" alt="Draft two preview">
-</a>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas...
-          </p>
-        </article>
-
-        <article class="draft-card">
-          <h2>DRAFT III.</h2>
-          <a href="sanctuary-stars.jpg" data-fancybox="gallery">
-  <img src="sanctuary-stars.jpg" alt="Draft three preview">
-</a>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas...
-          </p>
-        </article>
-
-      </section>
-
-      <section class="media col-12">
-  <h2>✦ my type of vibes. ✦</h2>
-
-  <iframe width="100%" height="315"
-  src="https://www.youtube.com/embed/gNNZ165Zvn4"
-  allowfullscreen>
-  </iframe>
-</section>
-
-
-    </main>
-
-  </div>
+<!-- FANCYBOX SCRIPT -->
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 <script>
   Fancybox.bind("[data-fancybox='gallery']", {});
 </script>
+
 <style>
 .icons {
   text-align: center;
@@ -99,6 +78,6 @@
   margin: 0 8px;
 }
 </style>
+
 </body>
 </html>
-
