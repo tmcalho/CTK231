@@ -14,6 +14,15 @@
 
 <body>
 
+<nav class="navbar">
+  <a href="home.html">HOME</a>
+  <a href="aboutme.html">ABOUT ME</a>
+  <a href="projects.html">PROJECTS</a>
+  <a href="playlist.html">PLAYLIST</a>
+  <a href="galleryy.html">GALLERY</a>
+  <a href="contacts.html">SEND ME LUV!</a>
+</nav>
+
 <div class="container">
 
   <!-- HEADER -->
@@ -44,8 +53,6 @@
       <a href="contacts.html" class="nav-box">SEND ME LUV!</a>
     </aside>
 
-
-
     <!-- MEDIA -->
     <section class="media col-12">
       <h2>✦ my type of vibes. ✦</h2>
@@ -68,7 +75,9 @@
 <!-- FANCYBOX SCRIPT -->
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 <script>
-  Fancybox.bind("[data-fancybox='gallery']", {});
+  if (window.Fancybox) {
+    Fancybox.bind("[data-fancybox='gallery']", {});
+  }
 </script>
 
 <style>

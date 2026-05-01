@@ -35,7 +35,7 @@
 
   <section class="hero">
     <h1>blood wedding archive</h1>
-    <p>moments, memories</p>
+    <p>moments, & memories!</p>
   </section>
 
   <section class="gallery f-carousel" id="galleryCarousel">
@@ -66,15 +66,21 @@
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.arrows.umd.js"></script>
 <script>
-  Fancybox.bind("[data-fancybox='gallery']", {});
+  if (window.Fancybox) {
+    Fancybox.bind("[data-fancybox='gallery']", {});
+  }
 
   const galleryCarousel = document.getElementById("galleryCarousel");
 
-  Carousel(galleryCarousel, {
-    infinite: true,
-    center: true,
-    slidesPerPage: 1
-  }, { Arrows }).init();
+  if (window.Carousel && galleryCarousel) {
+    const carouselPlugins = window.Arrows ? { Arrows: window.Arrows } : {};
+
+    Carousel(galleryCarousel, {
+      infinite: true,
+      center: true,
+      slidesPerPage: 1
+    }, carouselPlugins).init();
+  }
 </script>
 </body>
 </html>
