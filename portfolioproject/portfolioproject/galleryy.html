@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.css"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.arrows.css"
+  >
+  <link rel="stylesheet" href="sanctuary.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+  <a href="home.html">HOME</a>
+  <a href="aboutme.html">ABOUT ME</a>
+  <a href="projects.html">PROJECTS</a>
+  <a href="playlist.html">PLAYLIST</a>
+  <a href="galleryy.html">GALLERY</a>
+  <a href="contacts.html">SEND ME LUV!</a>
+</nav>
+
+<div class="container">
+
+  <section class="hero">
+    <h1>blood wedding archive</h1>
+    <p>moments, & memories!</p>
+  </section>
+
+  <section class="gallery f-carousel" id="galleryCarousel">
+
+    <div class="f-carousel__slide">
+      <a href="maidens-1.jpg" data-fancybox="gallery" data-caption="Maidens Picture #1">
+        <img src="maidens-1.jpg" alt="Maidens picture 1">
+      </a>
+    </div>
+
+    <div class="f-carousel__slide">
+      <a href="maidens-2.jpg.jpg" data-fancybox="gallery" data-caption="Maidens Picture #2">
+        <img src="maidens-2.jpg.jpg" alt="Maidens picture 2">
+      </a>
+    </div>
+
+    <div class="f-carousel__slide">
+      <a href="maidens-3.jpg" data-fancybox="gallery" data-caption="Maidens Picture #3">
+        <img src="maidens-3.jpg" alt="Maidens picture 3">
+      </a>
+    </div>
+
+    <div class="f-carousel__slide">
+      <a href="blood-wedding-bows.jpg" data-fancybox="gallery" data-caption="Blood Wedding Bows">
+        <img src="blood-wedding-bows.jpg" alt="Blood Wedding bows">
+      </a>
+    </div>
+
+    <div class="f-carousel__slide">
+      <a href="whole-cast-picture.jpg" data-fancybox="gallery" data-caption="Whole Cast Picture">
+        <img src="whole-cast-picture.jpg" alt="Whole cast picture">
+      </a>
+    </div>
+
+  </section>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.arrows.umd.js"></script>
+<script>
+  if (window.Fancybox) {
+    Fancybox.bind("[data-fancybox='gallery']", {});
+  }
+
+  const galleryCarousel = document.getElementById("galleryCarousel");
+
+  if (window.Carousel && galleryCarousel) {
+    const carouselPlugins = window.Arrows ? { Arrows: window.Arrows } : {};
+
+    Carousel(galleryCarousel, {
+      infinite: true,
+      center: true,
+      slidesPerPage: 1
+    }, carouselPlugins).init();
+  }
+</script>
+</body>
+</html>

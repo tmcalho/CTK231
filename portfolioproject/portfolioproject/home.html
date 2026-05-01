@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tysondra | My Sanctuary</title>
+
+  <link rel="stylesheet" href="sanctuary.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+  <a href="home.html">HOME</a>
+  <a href="aboutme.html">ABOUT ME</a>
+  <a href="projects.html">PROJECTS</a>
+  <a href="playlist.html">PLAYLIST</a>
+  <a href="galleryy.html">GALLERY</a>
+  <a href="contacts.html">SEND ME LUV!</a>
+</nav>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header class="banner col-12">
+    <h1>✶ WELCOME 2 MY WEBSITE. ✶</h1>
+  </header>
+
+  <!-- ICONS -->
+  <div class="icons">
+    <i class="fa-solid fa-heart"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-music"></i>
+  </div>
+
+  <main class="main-content">
+
+    <!-- HERO -->
+    <section class="hero col-8">
+      <img class="home-selfie" src="before-show-selfie.jpg" alt="Before show selfie">
+    </section>
+
+    <!-- NAVIGATION -->
+    <aside class="sidebar col-4">
+      <a href="aboutme.html" class="nav-box">ABOUT ME</a>
+      <a href="projects.html" class="nav-box">PROJECTS</a>
+      <a href="playlist.html" class="nav-box">PLAYLIST</a>
+      <a href="galleryy.html" class="nav-box">GALLERY</a>
+      <a href="contacts.html" class="nav-box">SEND ME LUV!</a>
+    </aside>
+
+    <!-- MEDIA -->
+    <section class="media col-12">
+      <h2>✦ my type of vibes. ✦</h2>
+
+      <iframe 
+        width="100%" 
+        height="315"
+        src="https://www.youtube.com/embed/gNNZ165Zvn4"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </section>
+
+  </main>
+
+</div>
+
+<!-- FANCYBOX SCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+<script>
+  if (window.Fancybox) {
+    Fancybox.bind("[data-fancybox='gallery']", {});
+  }
+</script>
+
+<style>
+.icons {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.icons i {
+  margin: 0 8px;
+}
+</style>
+
+</body>
+</html>
