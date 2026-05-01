@@ -5,40 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery</title>
 
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.css"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.arrows.css"
+  >
   <link rel="stylesheet" href="sanctuary.css">
 </head>
 
 <body>
 
-<header class="nav">
-
- <aside class="sidebar col-4">
-    <a href="home.html" class="nav-box">HOME</a>
-      <a href="aboutme.html" class="nav-box">ABOUT ME</a>
-      <a href="projects.html" class="nav-box">PROJECTS</a>
-  <a href="playlist.html" class="nav-box">PLAYLIST</a>
-      <a href="galleryy.html" class="nav-box">GALLERY</a>
-      <a href="contacts.html" class="nav-box">SEND ME LUV!</a>
-    </aside>
-</header>
+<nav class="navbar">
+  <a href="home.html">HOME</a>
+  <a href="aboutme.html">ABOUT ME</a>
+  <a href="projects.html">PROJECTS</a>
+  <a href="playlist.html">PLAYLIST</a>
+  <a href="galleryy.html">GALLERY</a>
+  <a href="contacts.html">SEND ME LUV!</a>
+</nav>
 
 <div class="container">
 
   <section class="hero">
-    <h1>visual archive</h1>
-    <p>moments, moods, aesthetics</p>
+    <h1>blood wedding archive</h1>
+    <p>moments, memories</p>
   </section>
 
-  <section class="gallery">
+  <section class="gallery f-carousel" id="galleryCarousel">
 
-    <img src="moonchild.jpg" alt="img1">
-    <img src="moonlight-dreams.jpg" alt="img2">
-    <img src="neon-heart.jpg" alt="img3">
-    <img src="sanctuary-stars.jpg" alt="img4">
+    <div class="f-carousel__slide">
+      <a href="MAIDENS%20PIC%20%231.jpeg" data-fancybox="gallery" data-caption="Maidens Picture #1">
+        <img src="MAIDENS%20PIC%20%231.jpeg" alt="Maidens picture 1">
+      </a>
+    </div>
+
+    <div class="f-carousel__slide">
+      <a href="MAIDENS%20PIC%20%233.jpeg" data-fancybox="gallery" data-caption="Maidens Picture #3">
+        <img src="MAIDENS%20PIC%20%233.jpeg" alt="Maidens picture 3">
+      </a>
+    </div>
+
+    <div class="f-carousel__slide">
+      <a href="MAIDENS%20PIC%20%236.jpeg" data-fancybox="gallery" data-caption="Maidens Picture #6">
+        <img src="MAIDENS%20PIC%20%236.jpeg" alt="Maidens picture 6">
+      </a>
+    </div>
 
   </section>
 
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/carousel/carousel.arrows.umd.js"></script>
+<script>
+  Fancybox.bind("[data-fancybox='gallery']", {});
+
+  const galleryCarousel = document.getElementById("galleryCarousel");
+
+  Carousel(galleryCarousel, {
+    infinite: true,
+    center: true,
+    slidesPerPage: 1
+  }, { Arrows }).init();
+</script>
 </body>
 </html>
